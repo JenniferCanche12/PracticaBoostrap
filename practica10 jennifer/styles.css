@@ -1,0 +1,117 @@
+.banner {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.text-center .button-group .btn-outline-primary {
+    border: 1px solid #F5B7B1;
+}
+
+.text-center .button-group .btn-outline-pink {
+    border: 1px solid #F5B7B1;
+}
+
+.btn-hot-sale {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+}
+
+.btn-hot-sale:hover {
+    color: #F5B7B1;
+}
+.bg-dark-color-1{
+    background-color: #F5B7B1;
+}
+
+}
+
+.button-group .btn-hot-sale::before,
+.button-group .btn-hot-sale::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s, opacity 0.5s;
+    z-index: -1;
+}
+
+.button-group .btn-hot-sale:hover::before,
+.button-group .btn-hot-sale:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.button-group .btn-hot-sale::after {
+    transition-delay: 0.2s;
+}
+
+.new-banner {
+    position: relative;
+    padding: 50px 0;
+    background-color: #F5B7B1;
+    color: white;
+    text-align: justify;
+}
+
+.new-banner .container {
+    position: relative;
+}
+
+.new-banner-img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.new-banner-text {
+    margin-top: 20px;
+}
+
+.new-banner .row {
+    display: flex;
+    align-items: center;
+}
+
+.new-banner .col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 100%;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.new-banner h2 {
+    margin-bottom: 20px;
+}
